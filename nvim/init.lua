@@ -23,6 +23,10 @@ require("lazy").setup({
   "hrsh7th/vim-vsnip",
 
   "nvim-treesitter/nvim-treesitter",
+
+  "nvim-telescope/telescope.nvim",
+
+  "rose-pine/neovim"
 })
 
 
@@ -30,3 +34,7 @@ require("lazy").setup({
 require("plugins.lsp")
 require("plugins.nvim-cmp")
 require("plugins.nvim-treesitter")
+
+-- Настройка маппингов
+require("mapping.remap")
+
