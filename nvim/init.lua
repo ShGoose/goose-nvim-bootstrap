@@ -23,6 +23,7 @@ require("lazy").setup({
   "hrsh7th/vim-vsnip",
 
   "nvim-treesitter/nvim-treesitter",
+  "nvim-treesitter/playground",
 
   "nvim-telescope/telescope.nvim",
 
