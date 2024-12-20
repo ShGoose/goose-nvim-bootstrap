@@ -5,6 +5,7 @@ require("mason-lspconfig").setup({
   ensure_installed = {
     "lua_ls",
     "bashls",
+--    "gopls",
   },
 })
 
@@ -26,8 +27,5 @@ lspconfig.lua_ls.setup({
   },
 })
 
-lspconfig.fish_lsp.setup({
-  cmd = { "fish-lsp", "start" },
-  filetypes = { "fish" },
-})
--- lspconfig.bashls.setup()
+-- lspconfig.gopls.setup({})
+lspconfig.bashls.setup({})
