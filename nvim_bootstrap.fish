@@ -8,6 +8,12 @@ function update
   end
 end
 
+function check_fish_lsp
+  if [ -z "$( whereis fish-lsp | awk '{print $2}' | tr -d '\n' )" ]
+   echo_warning "=> Требуется установить fish-lsp" 
+  end
+end
+
 if [ ! -d $CANNONICAL_SELF_DIR/.local/share/nvim/lazy/lazy.nvim ]
   echo_warning '=> lazy.nvim не найден. Выполняется установка...'
   git clone https://github.com/folke/lazy.nvim.git ~/.local/share/nvim/lazy/lazy.nvim
@@ -30,5 +36,7 @@ end
 for file in $( find nvim/ -type f )
   update $file
 end
+
+check_fish_lsp
 
 echo_success 'Готово!'
