@@ -56,13 +56,13 @@ require("lazy").setup({
   "VonHeikemen/lsp-zero.nvim",
   "L3MON4D3/LuaSnip",
   "rafamadriz/friendly-snippets",
-  {
-    "neoclide/coc.nvim",
-    branch = "release",
-    config = function()
-      vim.g.coc_global_extensions = { "coc-json", "coc-tsserver", "coc-pyright" }
-    end
-  }
+--   {
+--     "neoclide/coc.nvim",
+--     branch = "release",
+--     config = function()
+--       vim.g.coc_global_extensions = { "coc-json", "coc-tsserver", "coc-pyright" }
+--     end
+--   }
 
 --  "nvim-lua/kickstart.nvim",
 })
