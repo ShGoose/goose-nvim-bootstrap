@@ -4,7 +4,7 @@ require("mason").setup()
 require("mason-lspconfig").setup({
   ensure_installed = {
     "lua_ls",
-    "bashls",
+--    "bashls",
 --    "gopls",
   },
 })
@@ -28,4 +28,4 @@ lspconfig.lua_ls.setup({
 })
 
 -- lspconfig.gopls.setup({})
-lspconfig.bashls.setup({})
+-- lspconfig.bashls.setup({})
